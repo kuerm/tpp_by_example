@@ -1,12 +1,8 @@
 # Transformation Priority Premise
 
-Examples for every step in Transformation Priority Premise (TPP)
+Examples for transformations in Transformation Priority Premise (TPP)
 
-## Disclaimer
-
-This repo only provides examples for TPP. Clean Code principles or Object Calisthenics rules are not in focus
-
-## List
+## List of transformations
 
 1. ({} → nil) no code at all → code that employs nil
 2. (nil → constant)
@@ -25,12 +21,24 @@ This repo only provides examples for TPP. Clean Code principles or Object Calist
 
 ## Scenario / Requirements
 
-1. The method is named getValue (dummy)
+Example story to show the transformations in action. The context of the story is a class in school and the teacher
+wants to give fruits to the well behaving kids.
+
+1. The method is named greeting (dummy)
 2. "Hello" is returned
 3. "Hello world" is returned
 4. "Hello <parameter input>" is returned
 5. Every called name is saved in a list for later check if already called
 6. All kids with starting "M" in name are decent ones and don't have to be saved in a black list
+7. All called kids get some fruits
+8. The kids ask for their favorite fruit
+9. When the favorite fruit is not available anymore, the current kid wants to know who was called before to grab that
+   fruit.
+10. The kid can choose their favorite fruit. If there are in stock return the fruit otherwise a sad message.
+11. Duplicate requirement from #9.
+12. Implement Integration Operation Segregation Principle (IOSP) - internal refactoring.
+13. Make an internal refactoring to use/mutate existing variables.
+14. Kids can ask for the fruit color.
 
 ## Sources
 
