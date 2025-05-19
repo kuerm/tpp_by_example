@@ -11,8 +11,8 @@ public class Transformation8 {
     private static String call(String name) {
         return "Hello " + name;
     }
-    
-    public String greeting(String name) {
+
+    public String greetingBeforeTransformation(String name) {
         storeCalledName(name);
         return call(name);
     }

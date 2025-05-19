@@ -9,10 +9,7 @@ public class Transformation6 {
         return "Hello " + name;
     }
 
-    /**
-     * Before
-     */
-    public String greeting(String name) {
+    public String greetingBeforeTransformation(String name) {
         storeCalledName(name);
         return call(name);
     }
@@ -21,9 +18,6 @@ public class Transformation6 {
         calledKids.add(name);
     }
 
-    /**
-     * After
-     */
     public String greetingAfterTransformation(String name) {
         if (!name.startsWith("M")) {
             calledKids.add(name);

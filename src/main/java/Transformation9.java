@@ -15,10 +15,7 @@ public class Transformation9 {
         return call(name);
     }
 
-    /**
-     * Before
-     */
-    public int countKidsBefore(String name) {
+    public int countKidsBeforeTransformation(String name) {
         int result = 0;
         for (String calledKid : calledKids) {
             if (name.equalsIgnoreCase(calledKid)) {
@@ -29,9 +26,6 @@ public class Transformation9 {
         return result;
     }
 
-    /**
-     * After
-     */
     public int countKidsBeforeAfterTransformation(String name) {
         return countKidsBeforeRecursive(name, 0);
     }

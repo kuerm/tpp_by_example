@@ -9,23 +9,17 @@ public class Transformation5 {
         return "Hello " + name;
     }
 
-    /**
-     * Before
-     */
-    public String greeting(String name) {
+    public String greetingBeforeTransformation(String name) {
         return "Hello " + name;
     }
 
-    /**
-     * After 1
-     */
-    public String greetingAfterTransformation(String name) {
+    public String greetingAfterTransformation1(String name) {
         calledKids.add(name);
         return "Hello " + name;
     }
 
     /**
-     * After 2 - add some refactoring
+     * After 2 - with some refactoring
      */
     public String greetingAfterTransformation2(String name) {
         storeCalledName(name);

@@ -5,10 +5,7 @@ public class Transformation10 {
 
     private final Fruits fruits = new Fruits(List.of(new Fruit("Apple", 2), new Fruit("Banana", 3)));
 
-    /**
-     * Before
-     */
-    public String choose(String fruitName) {
+    public String chooseBeforeTransformation(String fruitName) {
         var returnedFruits = 0;
         if (fruits.hasFruits(fruitName)) {
             fruits.take(fruitName, 5);
@@ -25,9 +22,6 @@ public class Transformation10 {
         return "Sorry mate, no more %s for you".formatted(fruitName);
     }
 
-    /**
-     * After
-     */
     public String chooseAfterTransformation(String fruitName) {
         var returnedFruits = 0;
         while (fruits.hasFruits(fruitName)) {

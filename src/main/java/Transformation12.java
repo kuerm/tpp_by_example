@@ -5,17 +5,11 @@ import java.util.List;
 public class Transformation12 {
     protected final List<String> calledKids = new ArrayList<>();
 
-    /**
-     * Before
-     */
-    public String greeting(String name) {
+    public String greetingBeforeTransformation(String name) {
         calledKids.add(name);
         return "Hello " + name;
     }
 
-    /**
-     * After
-     */
     public String greetingAfterTransformation(String name) {
         storeCalledName(name);
         return call(name);
