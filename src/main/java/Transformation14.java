@@ -1,10 +1,7 @@
 // case
 public class Transformation14 {
 
-    /**
-     * Before
-     */
-    public String fruitColor(String fruitName) {
+    public String fruitColorBeforeTransformation(String fruitName) {
         if (fruitName.equals("Apple")) {
             return "red";
         }
@@ -18,9 +15,6 @@ public class Transformation14 {
         throw new IllegalArgumentException("Fruit %s not found".formatted(fruitName));
     }
 
-    /**
-     * After
-     */
     public String fruitColorAfterTransformation(String fruitName) {
         switch (fruitName) {
             case "Apple" -> {

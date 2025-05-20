@@ -12,8 +12,7 @@ public class Transformation7 {
         return "Hello " + name;
     }
 
-
-    public String greeting(String name) {
+    public String greetingBeforeTransformation(String name) {
         storeCalledName(name);
         return call(name);
     }

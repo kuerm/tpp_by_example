@@ -1,14 +1,9 @@
 // {} -> nil
 public class Transformation1 {
-    /**
-     * Before
-     */
-    // No relevant code
 
-    /**
-     * After
-     */
-    public String greeting() {
+    // Before: No relevant code
+
+    public String greetingAfterTransformation() {
         return null;
     }
 

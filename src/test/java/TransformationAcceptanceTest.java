@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class TransformationAcceptanceTest {
     @Test
     void t1_fromNothingToNull() {
-        String actual = new Transformation1().greeting();
+        String actual = new Transformation1().greetingAfterTransformation();
 
         assertThat(actual).isNull();
     }
