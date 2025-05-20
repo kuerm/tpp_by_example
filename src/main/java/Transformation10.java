@@ -1,6 +1,6 @@
 import java.util.List;
 
-// Statement -> tail-recursion
+// conditional -> loop
 public class Transformation10 {
 
     private final Fruits fruits = new Fruits(List.of(new Fruit("Apple", 2), new Fruit("Banana", 3)));

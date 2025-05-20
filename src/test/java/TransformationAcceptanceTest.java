@@ -58,7 +58,7 @@ public class TransformationAcceptanceTest {
     void t7_scalarToArray() {
         var testee = new Transformation7();
 
-        String[] actual = testee.fruits();
+        String[] actual = testee.fruitsAfterTransformation();
 
         assertThat(actual).containsExactlyInAnyOrder("apple", "banana");
     }
@@ -67,7 +67,7 @@ public class TransformationAcceptanceTest {
     void t8_arrayToContainer() {
         var testee = new Transformation8();
 
-        boolean actual = testee.has("Banana");
+        boolean actual = testee.hasFruit("Banana");
 
         assertThat(actual).isTrue();
     }

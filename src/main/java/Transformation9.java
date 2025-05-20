@@ -10,7 +10,13 @@ public class Transformation9 {
         return "Hello " + name;
     }
 
-    public String greeting(String name) {
+    /**
+     * only used for test setup
+     *
+     * @param name
+     * @return greeting
+     */
+    String greeting(String name) {
         storeCalledName(name);
         return call(name);
     }
